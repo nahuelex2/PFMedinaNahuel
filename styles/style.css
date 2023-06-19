@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: sans-serif;
 }
 
 body {
@@ -11,7 +11,13 @@ body {
     background-color: rgb(32, 7, 7);
 }
 
-main {}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/batucadaBackground1.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
 header {
     width: 1366px;
