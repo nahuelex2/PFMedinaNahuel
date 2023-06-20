@@ -9,6 +9,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aliceblue;
     background-color: rgb(32, 7, 7);
+
 }
 
 .banner {
@@ -17,24 +18,28 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/batucadaBackground1.jpg);
     background-size: cover;
     background-position: center;
+
+
 }
 
-.navbar {
-    width: 85%;
+.header {
     width: 100%;
-    /* color: aqua; */
+    position: fixed;
 
-    margin: auto;
-    padding: 35px 0;
+
+    /* margin: auto; */
+
+
+    background: rgb(93, 0, 0);
+    background: linear-gradient(90deg, rgba(93, 0, 0, 0.4485994226792279) 0%, rgba(154, 142, 6, 0.4485994226792279) 50%, rgba(16, 106, 6, 0.4822128680573792) 100%);
     padding: 10px 85px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgb(93, 0, 0);
-    background: linear-gradient(90deg, rgba(93, 0, 0, 0.4485994226792279) 0%, rgba(154, 142, 6, 0.4485994226792279) 50%, rgba(16, 106, 6, 0.4822128680573792) 100%);
 
 }
+
+
 
 .logo {
     /* width:; */
@@ -46,6 +51,11 @@ body {
     /* flex-wrap: nowrap; */
     align-items: center;
     gap: 20px;
+}
+
+.test {
+    width: 100%;
+    height: 100vh;
 }
 
 .logo img {
@@ -73,6 +83,8 @@ body {
     text-transform: uppercase;
 }
 
+
+
 .navbar ul li::after {
     content: '';
     height: 3px;
@@ -91,7 +103,75 @@ body {
     width: 100%;
 }
 
-header {
+.content {
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 70px;
+
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+
+    padding: 15px 0;
+
+
+    text-align: center;
+    margin: 20px 10px;
+
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+
+    overflow: hidden;
+}
+
+span {
+    background-color: #009688;
+    height: 100%;
+
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+    transition: 0.5s;
+}
+
+button:hover span {
+    background: rgb(93, 0, 0);
+    background: linear-gradient(90deg, rgb(253, 2, 2) 0%, rgba(255, 234, 0, 0.568) 50%, rgba(26, 255, 0, 0.5) 100%);
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+/* header {
     width: 1366px;
     height: 70px;
 }
@@ -100,7 +180,7 @@ header h3 {
     display: inline-block;
     width: fit-content;
     font-size: 3rem;
-}
+} */
 
 .portada {
     width: 100vw;
@@ -110,7 +190,7 @@ header h3 {
     width: 100%;
 }
 
-header nav {
+/* header nav {
     display: inline-block;
     margin-left: 0px;
 }
@@ -118,8 +198,8 @@ header nav {
 header nav ul li {
     display: inline-block;
     margin: 10px;
-}
-
+} */
+/* 
 a {
     color: rgb(31, 150, 150);
-}
+} */
