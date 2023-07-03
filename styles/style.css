@@ -172,6 +172,8 @@ body {
     top: 7px;
 }
 
+
+
 .banner {
     /* width: 100vw;
     height: 50vh; */
@@ -191,7 +193,7 @@ body {
 
 .banner h1 {
     font-family: 'Kablammo', cursive;
-    width: 300px;
+    /* width: 300px; */
     font-size: 2.2rem;
     text-align: end;
     /* display: block; */
@@ -213,81 +215,6 @@ body {
     height: 40vh;
 }
 
-@media screen and (min-width:800px) {
-
-    .nav-toggle-label {
-        display: none;
-    }
-
-    .header-tuto {
-
-        display: grid;
-
-        grid-template-columns: 1fr auto minmax(600px, 3fr)1fr;
-    }
-
-    .logoTuto {
-        grid-column: 2/ 3;
-    }
-
-    .nav-tuto {
-        all: unset;
-        grid-column: 3/4;
-        display: flex;
-        justify-content: flex-end;
-
-        align-items: center;
-    }
-
-    .nav-tuto ul {
-        display: flex;
-        justify-content: flex-end;
-
-    }
-
-    .nav-tuto li {
-        margin-left: 1em;
-        margin-bottom: 0;
-    }
-
-    .nav-tuto a {
-        opacity: 1;
-
-        position: relative;
-    }
-
-    .nav-tuto a::before {
-
-        content: '';
-
-        display: block;
-        height: 5px;
-        background-color: black;
-        position: absolute;
-        /* top: - .75em; */
-        bottom: -.75em;
-        left: 0;
-        right: 0;
-
-        transform: scale(0, 1);
-
-        /* transform-origin: right; */
-        transition: transform ease-in-out 250ms;
-    }
-
-    .nav-tuto a:hover::before {
-        transform: scale(1, 1);
-    }
-
-    .banner {
-        width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/batucadaBackground1.jpg);
-        background-size: cover;
-        background-position: center;
-
-    }
-}
 
 /* fin  navigation  style */
 
@@ -523,6 +450,87 @@ a {
 }
 
 @media screen and (min-width:1200px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    .header-tuto {
+
+        display: grid;
+
+        grid-template-columns: 1fr auto minmax(600px, 3fr)1fr;
+    }
+
+    .logoTuto {
+
+        display: flex;
+        flex-direction: row;
+        grid-column: 2/3;
+
+    }
+
+    .nav-tuto {
+        all: unset;
+        grid-column: 3/4;
+
+        align-self: center;
+    }
+
+    .nav-tuto ul {
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .nav-tuto li {
+        margin-left: 1em;
+        margin-bottom: 0;
+    }
+
+    .nav-tuto a {
+        opacity: 1;
+
+        position: relative;
+    }
+
+    .nav-tuto a::before {
+
+        content: '';
+
+        display: block;
+        height: 5px;
+        background-color: black;
+        position: absolute;
+        /* top: - .75em; */
+        bottom: -.75em;
+        left: 0;
+        right: 0;
+
+        transform: scale(0, 1);
+
+        /* transform-origin: right; */
+        transition: transform ease-in-out 250ms;
+    }
+
+    .nav-tuto a:hover::before {
+        transform: scale(1, 1);
+    }
+
+    .banner {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/batucadaBackground1.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .banner h1 {
+        /* all: unset; */
+        font-size: 6rem;
+
+    }
+
     .header {
         padding: 10px 85px;
 
@@ -548,4 +556,89 @@ a {
 
     }
 
+
+    .section {
+        /* background-color: #dd4c4f; */
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .article-index {
+        /* all: unset; */
+
+        /* background-color: #009688; */
+
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* justify-items: flex-end; */
+
+        align-items: center;
+
+        /* gap: 1px; */
+    }
+
+    .article__title {
+
+        font-size: 4rem;
+    }
+
+    .article__text {
+        /* grid-row: 2/3; */
+        text-align: justify;
+        font-size: 1.8rem;
+    }
+
+
+    .article__imgRight {
+        /* display: none; */
+
+        border-radius: 30px;
+        grid-column: 2;
+        grid-row: 1/3;
+
+
+    }
+
+    .article__imgLeft {
+        /* display: none; */
+
+        border-radius: 30px;
+        grid-column: 1;
+        grid-row: 1/3;
+
+
+    }
+
+    .video {
+        /* max-width: 1200px;
+        max-height: 1200px; */
+        width: 100%;
+        height: 100vh;
+
+        /* margin-bottom: 1rem; */
+    }
+
+
+
+
+    .footer_copyright {
+        /* all: unset; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 1rem;
+        margin-left: 5.5rem;
+    }
+
+    .footer_copyright hr {
+        height: 1.5rem;
+        border: none;
+        width: 2px;
+        background-color: white;
+    }
 }
