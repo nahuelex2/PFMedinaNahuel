@@ -16,7 +16,7 @@ body {
 
 
 
-.logoTuto {
+.header__logo {
 
     /* background-color: rebeccapurple; */
 
@@ -28,14 +28,14 @@ body {
     padding: 10px;
 }
 
-.logoTuto img {
+.header__logo img {
     width: 4rem;
     /* object-fit: cover; */
     border-radius: 50px 20px;
 
 }
 
-.logoTuto h3 {
+.header__logo h3 {
 
     font-family: 'Kablammo', cursive;
     font-size: 1.8rem;
@@ -50,7 +50,7 @@ body {
 }
 
 /* navigation  style  tyto */
-.header-tuto {
+.header {
 
     background: var(--backgroundTricolor);
 
@@ -66,7 +66,7 @@ body {
     box-shadow: 1px 1px 4px 0 rgba(5, 228, 72, 0.1);
 }
 
-.nav-tuto {
+.header__nav {
     position: absolute;
     text-align: left;
 
@@ -86,20 +86,20 @@ body {
     /* display: none; */
 }
 
-.nav-tuto ul {
+.header__nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.nav-tuto li {
+.header__nav li {
     margin-bottom: 1em;
     margin-left: 1em;
     /* padding: 2px; */
 }
 
 
-.nav-tuto a {
+.header__nav a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
@@ -116,12 +116,12 @@ body {
 
 }
 
-.nav-toggle:checked~.nav-tuto {
+.nav-toggle:checked~.header__nav {
     /* display: block; */
     transform: scale(1, 1);
 }
 
-.nav-toggle:checked~.nav-tuto a {
+.nav-toggle:checked~.header__nav a {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
 }
@@ -405,6 +405,8 @@ header h3 {
 .membersSection {
     background-color: #30373d;
     /* flex-direction: rowc; */
+    padding: 1rem;
+
 
 }
 
@@ -469,14 +471,14 @@ header h3 {
         display: none;
     }
 
-    .header-tuto {
+    .header {
 
         display: grid;
 
         grid-template-columns: 1fr auto minmax(600px, 3fr)1fr;
     }
 
-    .logoTuto {
+    .header__logo {
 
         display: flex;
         flex-direction: row;
@@ -484,31 +486,31 @@ header h3 {
 
     }
 
-    .nav-tuto {
+    .header__nav {
         all: unset;
         grid-column: 3/4;
 
         align-self: center;
     }
 
-    .nav-tuto ul {
+    .header__nav ul {
         display: flex;
         justify-content: flex-end;
 
     }
 
-    .nav-tuto li {
+    .header__nav li {
         margin-left: 1em;
         margin-bottom: 0;
     }
 
-    .nav-tuto a {
+    .header__nav a {
         opacity: 1;
 
         position: relative;
     }
 
-    .nav-tuto a::before {
+    .header__nav a::before {
 
         content: '';
 
@@ -527,7 +529,7 @@ header h3 {
         transition: transform ease-in-out 250ms;
     }
 
-    .nav-tuto a:hover::before {
+    .header__nav a:hover::before {
         transform: scale(1, 1);
     }
 
