@@ -175,20 +175,34 @@ body {
 
 
 .banner {
-    /* width: 100vw;
-    height: 50vh; */
+
     width: 100vw;
     height: 30rem;
-    /* border: 4px solid red; */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/batucadaBackground1.jpg);
+
 
     background-size: cover;
     background-position: center;
-    /* display: flex;
 
-    align-items: center;
-    justify-content: end; */
     position: relative;
+}
+
+.banner-blog-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.bb1ZLm3zuL8wwCuHfJbY9AHaEz%26pid%3DApi&f=1&ipt=e7b782b3df40f39a86079fad35d5201f19d421b132f998075d9b1b1fd2122608&ipo=images");
+
+}
+
+.banner-home-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/batucadaBackground1.jpg);
+}
+
+.banner-galery-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.8ebiOyHEoyjLZ_2LkQEPgQHaE7%26pid%3DApi&f=1&ipt=0d0149d6a38bba5e48f9f902f5013738eb697636d4414f6ed4ca65bd2274681b&ipo=images");
+
+}
+
+.banner-contact-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Lb8t9TE2JJN6KbsfBREpbQHaEK%26pid%3DApi&f=1&ipt=305237f818763140aabe811d81639a0661fad67aa29fb6b5eccf93b0163f5c73&ipo=images");
+
 }
 
 .banner h1 {
@@ -397,7 +411,7 @@ header h3 {
 .membersSection-title,
 .memberSection-subtitle {
     text-align: center;
-    margin: 1rem 0px;
+    margin: 0.5rem 0px;
 
 }
 
@@ -518,12 +532,8 @@ header h3 {
     }
 
     .banner {
-        width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/batucadaBackground1.jpg);
-        background-size: cover;
-        background-position: center;
 
+        height: 100vh;
     }
 
     .banner h1 {

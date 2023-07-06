@@ -10,31 +10,36 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-tuto">
 
 
-        <h3>PercuTraka</h3>
+        <div class="logoTuto ">
+            <img src="../img/batucadaLogo.webp" alt="">
+            <h3>PercuTraka</h3>
+        </div>
 
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav class="nav-tuto">
 
-        <nav>
-            <ul>
+            <ul class="">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./about.html">Quienes somos</a></li>
                 <li><a href="./galery.html">Galería</a></li>
                 <li><a href="./blog.html">Blog y Noticias</a></li>
-                <li><a href="#">Contactanos</a></li>
+                <li><a href="#" id="actualPage">Contactanos</a></li>
             </ul>
-        </nav>
-    </header>
 
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+
+            <span></span>
+        </label>
+    </header>
+    <section class="banner  banner-contact-img">
+        <h1>percutraka <br> batucada</h1>
+    </section>
     <main>
-        <section class="portada">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Lb8t9TE2JJN6KbsfBREpbQHaEK%26pid%3DApi&f=1&ipt=305237f818763140aabe811d81639a0661fad67aa29fb6b5eccf93b0163f5c73&ipo=images"
-                alt="batucada2">
-            <h1>vibra con nosotros</h1>
-            <h3>Tanto si quieres tocar en nuestra batucada como si quieres contratar un espectáculo
-                para tus eventos, no dudes en ponerte en contacto con nosotros.</h3>
-        </section>
+
 
         <div>
             <h2>ESCRIBINOS UN MENSAJE</h2>
@@ -74,13 +79,21 @@
         </section>
     </main>
 
-    <footer>
-        <h4>Copyright 2023 | Todos los derechos reservados</h4>
+    <hr>
+    <footer class="footer">
+
+
+        <div class="footer_copyright">
+            <h3>Copyright 2023</h3>
+            <hr>
+            <h3>Todos los derechos reservados</h3>
+        </div>
+
         <div class="redes sociales">
-            <a href="" class="facebook">facebook</a>
-            <a href="" class="Instagram">Instagram</a>
-            <a href="" class="TikTok">TikTok</a>
-            <a href="" class="Email">Email</a>
+            <a href="#" class="icon facebook"><img src="../img/icon_facebook.png" alt=""></a>
+            <a href="#" class="icon Instagram"><img src="../img/icon_twitter.png" alt=""></a>
+            <a href="#" class="icon TikTok"><img src="../img/icon_telegram.png" alt=""></a>
+            <a href="#" class="icon Email"><img src="../img/icon_whatsapp.png" alt=""></a>
         </div>
         <span>Desarrollado por: Nahuel Medina</span>
     </footer>

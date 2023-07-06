@@ -6,33 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
     <title>Blog Y Noticias</title>
 </head>
 
 <body>
-    <header>
+    <header class="header-tuto">
 
 
-        <h3>PercuTraka</h3>
+        <div class="logoTuto ">
+            <img src="../img/batucadaLogo.webp" alt="">
+            <h3>PercuTraka</h3>
+        </div>
 
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav class="nav-tuto">
 
-        <nav>
-            <ul>
+            <ul class="">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./about.html">Quienes somos</a></li>
                 <li><a href="./galery.html">Galería</a></li>
-                <li><a href="#">Blog y Noticias</a></li>
+                <li><a href="#" id="actualPage">Blog y Noticias</a></li>
                 <li><a href="./contact.html">Contactanos</a></li>
             </ul>
+
         </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+
+            <span></span>
+        </label>
     </header>
+
+    <section class="banner banner-blog-img">
+        <h1>percutraka <br> batucada</h1>
+    </section>
     <main>
-        <section class="portada">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.bb1ZLm3zuL8wwCuHfJbY9AHaEz%26pid%3DApi&f=1&ipt=e7b782b3df40f39a86079fad35d5201f19d421b132f998075d9b1b1fd2122608&ipo=images"
-                alt="batucada2">
-            <h1>BLOG Y NOTICIAS</h1>
-            <h3>Toda la info y noticias sobre el mundo de la batucada y la PercuTraka</h3>
-        </section>
+
         <section>
             <h2>ARTÍCULOS RECIENTES</h2>
             <article class="articleCard">
@@ -125,13 +136,21 @@
         </section>
 
     </main>
-    <footer>
-        <h4>Copyright 2023 | Todos los derechos reservados</h4>
+    <hr>
+    <footer class="footer">
+
+
+        <div class="footer_copyright">
+            <h3>Copyright 2023</h3>
+            <hr>
+            <h3>Todos los derechos reservados</h3>
+        </div>
+
         <div class="redes sociales">
-            <a href="" class="facebook">facebook</a>
-            <a href="" class="Instagram">Instagram</a>
-            <a href="" class="TikTok">TikTok</a>
-            <a href="" class="Email">Email</a>
+            <a href="#" class="icon facebook"><img src="../img/icon_facebook.png" alt=""></a>
+            <a href="#" class="icon Instagram"><img src="../img/icon_twitter.png" alt=""></a>
+            <a href="#" class="icon TikTok"><img src="../img/icon_telegram.png" alt=""></a>
+            <a href="#" class="icon Email"><img src="../img/icon_whatsapp.png" alt=""></a>
         </div>
         <span>Desarrollado por: Nahuel Medina</span>
     </footer>

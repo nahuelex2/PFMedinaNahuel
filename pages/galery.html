@@ -8,77 +8,52 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/galery.css
     ">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
     <title>Galería</title>
 </head>
 
 <body>
-    <header>
+
+    <header class="header-tuto">
 
 
-        <h3>PercuTraka</h3>
+        <div class="logoTuto ">
+            <img src="../img/batucadaLogo.webp" alt="">
+            <h3>PercuTraka</h3>
+        </div>
 
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav class="nav-tuto">
 
-        <nav>
-            <ul>
+            <ul class="">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./about.html">Quienes somos</a></li>
-                <li><a href="#">Galería</a></li>
+                <li><a href="#" id="actualPage">Galería</a></li>
                 <li><a href="./blog.html">Blog y Noticias</a></li>
                 <li><a href="./contact.html">Contactanos</a></li>
             </ul>
+
         </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+
+            <span></span>
+        </label>
     </header>
+    <section class="banner banner-galery-img">
+        <h1>Galería</h1>
+        <!-- <p class="banner__Text">
+            Algunos de nuestros mejores momentos en imágenes y video
+        </p> -->
+    </section>
+
     <main>
-        <section class="portada">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.8ebiOyHEoyjLZ_2LkQEPgQHaE7%26pid%3DApi&f=1&ipt=0d0149d6a38bba5e48f9f902f5013738eb697636d4414f6ed4ca65bd2274681b&ipo=images"
-                alt="batucada2">
-            <h1>Galería</h1>
-            <h2>Algunos de nuestros mejores momentos en imágenes y video</h2>
-        </section>
+
 
         <section>
 
             <div class="container">
-                <!-- <div class="gallery-container w-2 h-2">
-
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="https://source.unsplash.com/random/?percussion&1" alt="percussion">
-                        </div>
-
-
-                        <div class="text">
-                            percussion
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-container w-2 h-2">
-
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="https://source.unsplash.com/random/?percussion" alt="percussion">
-                        </div>
-
-
-                        <div class="text">
-                            percussion
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-container w-2 h-2">
-
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="https://source.unsplash.com/random/?percussion" alt="percussion">
-                        </div>
-
-
-                        <div class="text">
-                            percussion
-                        </div>
-                    </div>
-                </div> -->
 
 
                 <div class="gallery-container w-2 h-2">
@@ -106,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="gallery-container  w-1 h-3">
+                <div class="gallery-container  w-1 h-2">
 
                     <div class="gallery-item">
                         <div class="image">
@@ -120,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="gallery-container w-3 h-1">
+                <div class="gallery-container w-4 h-1">
 
                     <div class="gallery-item">
                         <div class="image">
@@ -206,9 +181,12 @@
                 <div class="gallery-container w-2 h-2">
 
                     <div class="gallery-item">
-                        <div class="image">
-                            <img src="https://www.percuforum.com/blog/wp-content/uploads/2021/01/maxresdefault.jpg"
-                                alt="percussion">
+                        <div class="iframe">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/9punfJEqq4Q"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
                         </div>
 
 
@@ -483,7 +461,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="gallery-container w-2  h-1">
+                <div class="gallery-container w-3  h-1">
 
                     <div class="gallery-item">
                         <div class="image">
@@ -510,7 +488,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="gallery-container w-2 h-1 ">
+                <div class="gallery-container w-3 h-1 ">
 
                     <div class="gallery-item">
                         <div class="image">
@@ -527,13 +505,20 @@
             </div>
         </section>
     </main>
-    <footer>
-        <h4>Copyright 2023 | Todos los derechos reservados</h4>
+    <footer class="footer">
+
+
+        <div class="footer_copyright">
+            <h3>Copyright 2023</h3>
+            <hr>
+            <h3>Todos los derechos reservados</h3>
+        </div>
+
         <div class="redes sociales">
-            <a href="" class="facebook">facebook</a>
-            <a href="" class="Instagram">Instagram</a>
-            <a href="" class="TikTok">TikTok</a>
-            <a href="" class="Email">Email</a>
+            <a href="#" class="icon facebook"><img src="../img/icon_facebook.png" alt=""></a>
+            <a href="#" class="icon Instagram"><img src="../img/icon_twitter.png" alt=""></a>
+            <a href="#" class="icon TikTok"><img src="../img/icon_telegram.png" alt=""></a>
+            <a href="#" class="icon Email"><img src="../img/icon_whatsapp.png" alt=""></a>
         </div>
         <span>Desarrollado por: Nahuel Medina</span>
     </footer>
