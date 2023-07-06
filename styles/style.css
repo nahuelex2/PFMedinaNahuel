@@ -514,7 +514,7 @@ header h3 {
 
         display: block;
         height: 5px;
-        background-color: black;
+        background-color: whitesmoke;
         position: absolute;
         /* top: - .75em; */
         bottom: -.75em;
