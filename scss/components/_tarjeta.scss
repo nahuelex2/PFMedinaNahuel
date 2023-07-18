@@ -1,0 +1,50 @@
+.tarjeta {
+    width: 350px;
+
+    border: 2px solid black;
+    margin-left: 200px;
+
+    &__img {
+        height: 100px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__body {
+        padding: 1.5rem;
+    }
+
+    &__lista {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__item {
+        padding: .3rem .5rem;
+        background-color: $c-gris;
+        border-radius: 10px;
+        font-size: .8rem;
+
+        &--active {
+            @extend .tarjeta__item;
+            font-weight: bold;
+        }
+    }
+
+    &__btn {
+        background-color: $c-rojo;
+        color: white;
+        text-decoration: none;
+        padding: .5rem 1rem;
+        display: inline-block;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: cadetblue;
+        }
+    }
+}

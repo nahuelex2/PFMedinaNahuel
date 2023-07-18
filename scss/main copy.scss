@@ -1,0 +1,147 @@
+@import './base';
+
+@import './components/header';
+
+.titulo {
+    font-size: 2rem;
+
+    font-weight: 900;
+}
+
+
+
+.titulo-destacado {
+    @extend .titulo;
+    color: red;
+}
+
+//mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-galeria {
+    @include flex-center;
+}
+
+
+@mixin flexbox($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.contenedor-galeria2 {
+    @include flexbox(space-around, stretch)
+}
+
+//@mixins  y  mediaqueries
+
+$bp-tablet: 780px;
+$bp-descktop: 1200px;
+
+@mixin tablet {
+    @media(mim-width:$bp-tablet) {
+        //@content lo   que  copiemos
+        //entre las llaves del  mixin tablet
+
+        //apareceaca
+        @content;
+    }
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: cadetblue;
+
+    @include tablet {
+
+        //donde puse @content
+        //aparecen  estascosas
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: crimson;
+    }
+}
+
+
+$color: red;
+
+
+.caja {
+    @if $color==green {
+        width: 200px;
+        height: 200px;
+    }
+
+    @else if $color ==blue {
+        width: 300px;
+        height: 300px;
+
+    }
+
+    @else {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+$bg-header: black;
+
+@mixin tipografia($bg) {
+    background-color: $bg;
+
+    @if(lightness($bg)>50) {
+        color: black;
+    }
+
+    @else {
+        color: white;
+    }
+}
+
+
+.header {
+    @include tipografia(red);
+}
+
+
+
+//maps y  eachs
+
+
+
+
+
+@each $var in(60px, 40px, 80px) {
+    .caja-bucle-#{$var} {
+        width: $var;
+    }
+}
+
+
+$redes: (
+    twitter:#46b0f1,
+    facebook:#3a5795,
+    twitch:blueviolet
+);
+
+@each $clave,
+$valor in $redes {
+    .btn-#{$clave} {
+        background-color: $valor;
+    }
+}
+
+//for
+
+@for $i from 1 through 10 {
+
+    .col-#{$i} {
+        width: 10% * $i;
+    }
+}

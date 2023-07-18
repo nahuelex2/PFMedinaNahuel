@@ -1,0 +1,24 @@
+// $c-blanco: white;
+// $c-gris: #e6e6e6;
+// $c-rojo: #e0466b;
+// $color-primario: orange;
+$bg-borrar: rgba(0, 214, 170, .85);
+$bg-tricolor: linear-gradient(90deg, rgba(93, 0, 0, 0.4485994226792279) 0%, rgba(154, 142, 6, 0.4485994226792279) 50%, rgba(16, 106, 6, 0.4822128680573792) 100%);
+$kablacammoFont: 'Kablammo', cursive;
+$c-Ative: #ddcf0ab7;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    background-color: rgb(32, 7, 7);
+    background-color: #3d3930;
+}
