@@ -6,6 +6,20 @@
     z-index: 999;
     box-shadow: 1px 1px 4px 0 rgba(5, 228, 72, 0.1);
 
+    @include desktop {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr)1fr;
+
+
+
+        padding: 10px 85px;
+
+
+        // flex-direction: row;
+        // align-items: center;
+        // justify-content: space-between;
+    }
+
     &__logo {
         display: flex;
         flex-direction: column;
@@ -14,7 +28,11 @@
         gap: 10px;
         padding: 10px;
 
-
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            grid-column: 2/3;
+        }
 
         &__img {
             width: 4rem;
