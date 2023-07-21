@@ -1,0 +1,139 @@
+.nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: $bg-tricolor;
+
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+    text-align: center;
+
+    @include desktop {
+        all: unset;
+        grid-column: 3/4;
+        align-self: center;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        @include desktop {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+
+    li {
+        margin-bottom: 1em;
+        margin-left: 1em;
+
+        @include desktop {
+            // margin-left: 1em;
+            margin-bottom: 0;
+        }
+    }
+
+
+    &__link {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+
+        @include desktop {
+            opacity: 1;
+            position: relative;
+
+            &:before {
+                content: '';
+                display: block;
+                height: 5px;
+                background-color: whitesmoke;
+                position: absolute;
+                bottom: -.75em;
+                left: 0;
+                right: 0;
+                transform: scale(0, 1);
+                transition: transform ease-in-out 250ms;
+            }
+
+            &:hover::before {
+                transform: scale(1, 1);
+            }
+        }
+
+        &--active {
+            color: $c-Ative;
+        }
+
+    }
+
+
+
+
+
+}
+
+.nav__toggle {
+    display: none;
+
+    &:checked~.nav {
+        transform: scale(1, 1);
+
+        & a {
+            opacity: 1;
+            transition: opacity 250ms ease-in-out 250ms;
+        }
+    }
+
+
+    &__label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 1em;
+        height: 80%;
+        display: flex;
+        align-items: center;
+
+        @include desktop {
+            display: none;
+        }
+
+
+        & span,
+        & span::before,
+        & span::after {
+            display: block;
+            background-color: white;
+            height: 2px;
+            width: 2em;
+            border-radius: 2px;
+            position: relative;
+        }
+
+
+        & span::before,
+        & span::after {
+            content: "";
+            position: absolute;
+        }
+
+        & span::before {
+            bottom: 7px;
+        }
+
+        & span::after {
+            top: 7px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.membersSection {
+    background-color: #30373d;
+    padding: 1rem;
+
+    &__title {
+        text-align: center;
+        margin: 0.5rem 0px;
+    }
+
+
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
