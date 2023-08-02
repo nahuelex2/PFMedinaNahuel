@@ -6,62 +6,7 @@
     grid-auto-flow: dense;
 }
 
-.gallery__item {
-    width: 100%;
-    height: 100%;
-    position: relative;
 
-    & &__media {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    & &__media img,
-
-    & &__media iframe {
-
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 50% 50%;
-        cursor: pointer;
-        transition: .3s ease-in-out;
-    }
-
-    &:hover &__media img {
-        transform: scale(1.5);
-    }
-
-    &:hover &__media iframe {
-        transform: scale(0.95);
-    }
-
-
-    & &__text {
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-        font-size: 25px;
-        pointer-events: none;
-        z-index: 4;
-
-        transition: .3 ease-in-out;
-
-        -webkit-backdrop-filter: blur(5px) saturate(1.8);
-        backdrop-filter: blur(5px) saturate(1.8);
-
-    }
-
-    &:hover &__text {
-        animation: move-down .3s linear;
-        padding: 1em;
-        width: 100%;
-    }
-}
 
 @for $i from 1 through 6 {
 
@@ -74,5 +19,40 @@
 
     .h-#{$i} {
         grid-row: span $i;
+    }
+}
+
+
+
+@media screen and (max-width:500px) {
+    .gallery__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .w-1,
+    .w-2,
+    .w-3,
+    .w-4,
+    .w-5,
+    .w-6 {
+
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .gallery__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .w-1,
+    .w-2,
+    .w-3,
+    .w-4,
+    .w-5,
+    .w-6 {
+
+        grid-column: span 1;
     }
 }

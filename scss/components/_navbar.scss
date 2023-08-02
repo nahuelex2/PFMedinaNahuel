@@ -34,14 +34,13 @@
         margin-left: 1em;
 
         @include desktop {
-            // margin-left: 1em;
             margin-bottom: 0;
         }
     }
 
 
     &__link {
-        color: white;
+        color: rgba(226, 221, 221, 0.959);
         text-decoration: none;
         font-size: 1.2rem;
         font-size: 1rem;
@@ -73,6 +72,7 @@
 
         &--active {
             color: $c-Ative;
+
         }
 
     }
@@ -83,30 +83,7 @@
 
 }
 
-.navBoot {
-    justify-content: center;
-    line-height: 1;
-}
 
-.bootstrapFooter {
-    //background-color: brown;
-    line-height: 1;
-
-
-    & h3 {
-        font-weight: bold;
-        line-height: inherit;
-
-    }
-
-    & hr {
-
-        margin: 0;
-        color: aliceblue;
-        opacity: .5;
-
-    }
-}
 
 .nav__toggle {
     display: none;

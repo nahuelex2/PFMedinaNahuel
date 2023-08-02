@@ -1,0 +1,53 @@
+.gridContainer {
+
+
+
+    @include desktop {
+        // margin-left: 1em;
+        width: 85%;
+        margin: 2rem auto;
+        // background-color: rgb(151, 178, 196);
+        // padding: 20px;
+        display: grid;
+        // height: 100vh;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 3rem;
+
+    @include desktop {
+
+        display: flex;
+
+        flex-direction: row;
+        // justify-content: space-around;
+
+    }
+
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+
+    background-color: rgba(109, 110, 6, 0.349);
+
+    @include desktop {
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+
+
+
+}
