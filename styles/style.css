@@ -48,7 +48,8 @@ body {
 @media (min-width: 1200px) {
   .article__text {
     text-align: justify;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    align-self: start;
   }
 }
 .article__img {
@@ -76,7 +77,6 @@ body {
   .header {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-    padding: 10px 85px;
   }
 }
 .header__logo {
@@ -94,6 +94,9 @@ body {
     grid-column: 2/3;
   }
 }
+.header__logo__link {
+  text-decoration: none;
+}
 .header__logo__img {
   width: 4rem;
   border-radius: 50px 20px;
@@ -101,6 +104,7 @@ body {
 .header__logo__title {
   font-family: "Kablammo", cursive;
   font-size: 1.8rem;
+  color: white;
 }
 
 .nav {
@@ -224,7 +228,10 @@ body {
   height: 30rem;
   background-size: cover;
   background-position: center;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
 }
 @media (min-width: 1200px) {
   .banner {
@@ -232,13 +239,22 @@ body {
     margin-bottom: 0.5rem;
   }
 }
-.banner h1 {
+.banner__text {
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.397);
+  width: 12rem;
+  font-weight: 500;
+}
+@media (min-width: 1200px) {
+  .banner__text {
+    font-size: 2.2rem;
+    width: 28rem;
+  }
+}
+.banner__title {
+  align-self: flex-end;
   font-family: "Kablammo", cursive;
-  font-size: 2.2rem;
-  text-align: end;
-  position: absolute;
-  bottom: 20%;
-  right: 10%;
+  font-size: 1.8rem;
   background: radial-gradient(circle, rgb(255, 0, 0) 0%, rgb(241, 255, 0) 50%, rgb(51, 186, 36) 100%);
   /* Mask the color to the text, and remove the rest  */
   -webkit-background-clip: text;
@@ -247,8 +263,8 @@ body {
   -webkit-text-fill-color: transparent;
 }
 @media (min-width: 1200px) {
-  .banner h1 {
-    font-size: 6rem;
+  .banner__title {
+    font-size: 4rem;
   }
 }
 
@@ -257,15 +273,15 @@ body {
 }
 
 .banner__img-about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://www.fm899.com.ar/public/images/noticias/62387-brindaran-taller-gratuito-sobre-batucada-y-cantos-olodunicos.jpg");
+}
+
+.banner__img-blog {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://www.brasiltradicionalshow.com/wp-content/uploads/2016/05/Batucada-BTS-8.jpg");
 }
 
 .banner__img-galery {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.8ebiOyHEoyjLZ_2LkQEPgQHaE7%26pid%3DApi&f=1&ipt=0d0149d6a38bba5e48f9f902f5013738eb697636d4414f6ed4ca65bd2274681b&ipo=images");
-}
-
-.banner__img-blog {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("");
 }
 
 .banner__img-contact {
@@ -370,7 +386,7 @@ body {
   width: 100%;
   resize: none;
 }
-.form-control {
+.form__control {
   padding: 0.8rem;
   border-radius: 6px;
   width: 100%;

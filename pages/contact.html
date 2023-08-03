@@ -29,8 +29,10 @@
 
 
         <div class="header__logo">
-            <img src="../img/batucadaLogo.webp" class="header__logo__img" alt="logo percutraka batucada">
-            <h3 class="header__logo__title">PercuTraka</h3>
+            <a href="../index.html" class="header__logo__link">
+                <img src=" ../img/batucadaLogo.webp" class="header__logo__img" alt="logo percutraka batucada">
+                <h3 class="header__logo__title">PercuTraka</h3>
+            </a>
         </div>
 
         <input type="checkbox" class="nav__toggle" id="nav__toggle">
@@ -50,8 +52,9 @@
             <span></span>
         </label>
     </header>
-    <section class="banner banner__img-home">
-        <h1>percutraka <br> batucada</h1>
+    <section class="banner banner__img-contact">
+        <p class="banner__text">Contrata o únete a Percutraka para vivir el inolvidable ritmo de la batucada juntos</p>
+        <h1 class="banner__title">Contactanos</h1>
     </section>
 
     <main>
@@ -60,15 +63,15 @@
                 <h2>ESCRIBINOS UN MENSAJE</h2>
                 <div class="row">
 
-                    <input type="text" class="form-control" placeholder="Tu nombre" />
+                    <input type="text" class="form__control" placeholder="Tu nombre" name="name" />
 
 
-                    <input type="text" class="form-control" placeholder="Tu apellido" />
+                    <input type="text" class="form__control" placeholder="Tu apellido" name="surname" />
 
                 </div>
-                <input type="email" class="form-control " placeholder="Tu mail">
-                <input type="text " class="form-control " placeholder="Asunto" />
-                <textarea class="form-control  " placeholder="Mensaje"></textarea>
+                <input type="email" class="form__control " placeholder="Tu mail" name="email">
+                <input type="text " class="form__control " placeholder="Asunto" name="subject" />
+                <textarea class="form__control  " placeholder="Mensaje" name="message"></textarea>
                 <button type="submit" class="form__btn">Enviar</button>
             </form>
 

@@ -9,10 +9,12 @@
     @include desktop {
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 3fr)1fr;
-        padding: 10px 85px;
+        // padding: 10px 85px;
     }
 
     &__logo {
+
+
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -26,6 +28,10 @@
             grid-column: 2/3;
         }
 
+        &__link {
+            text-decoration: none;
+        }
+
         &__img {
             width: 4rem;
             border-radius: 50px 20px;
@@ -33,8 +39,11 @@
         }
 
         &__title {
+
             font-family: $kablacammoFont;
             font-size: 1.8rem;
+
+            color: white;
         }
     }
 
