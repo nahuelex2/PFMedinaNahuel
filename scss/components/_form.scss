@@ -1,0 +1,57 @@
+.form {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    // padding: 6rem;
+    gap: 3rem;
+    background-color: rgba(243, 6, 6, 0.26);
+    flex-wrap: nowrap;
+    padding: 1rem;
+    background: $bg-tricolor;
+
+    & textarea {
+        height: 120px;
+        width: 100%;
+        resize: none;
+    }
+
+
+    &__control {
+        padding: .8rem;
+        border-radius: 6px;
+        width: 100%;
+        // display: flex;
+        // flex-wrap: nowrap;
+    }
+
+    &__btn {
+        width: 80%;
+
+        padding: 1rem;
+        border: none;
+
+        border-radius: 10px;
+        background-color: rgb(12, 102, 39);
+
+        cursor: pointer;
+        color: white;
+        background-color: rgba(172, 4, 35, 0.925);
+        font-size: 20px;
+
+
+        &:hover {
+            background-color: rgb(199, 20, 53);
+
+
+        }
+
+    }
+
+    @include desktop {
+        border-radius: 1rem;
+    }
+}

@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
-    <title>Blog Y Noticias</title>
+
+    <meta name="description"
+        content="Mantente actualizado con el blog y noticias de Percutraka. Descubre artículos fascinantes sobre la música, cultura y los eventos donde llevamos nuestra pasión por la batucada.">
+
+
+
+    <title>Blog y Noticias | Percutraka - Mantente al Día con Nuestros Artículos</title>
 </head>
 
 <body>
@@ -20,8 +24,10 @@
 
 
         <div class="header__logo">
-            <img src="../img/batucadaLogo.webp" class="header__logo__img" alt="">
-            <h3 class="header__logo__title">PercuTraka</h3>
+            <a href="../index.html" class="header__logo__link">
+                <img src="../img/batucadaLogo.webp" class="header__logo__img" alt="logo percutraka batucada">
+                <h3 class="header__logo__title">PercuTraka</h3>
+            </a>
         </div>
 
         <input type="checkbox" class="nav__toggle" id="nav__toggle">
@@ -29,9 +35,9 @@
 
             <ul>
                 <li><a class="nav__link" href="../index.html">Inicio</a></li>
-                <li><a class="nav__link" href="#">Quienes somos</a></li>
-                <li><a class="nav__link" href="./galery.html">Galería</a></li>
-                <li><a class="nav__link  nav__link--active" href="./blog.html">Blog y Noticias</a></li>
+                <li><a class="nav__link" href="./about.html">Quienes somos</a></li>
+                <li><a class="nav__link " href="./galery.html">Galería</a></li>
+                <li><a class="nav__link nav__link--active" href="#">Blog y Noticias</a></li>
                 <li><a class="nav__link" href="./contact.html">Contactanos</a></li>
             </ul>
 
@@ -43,78 +49,182 @@
     </header>
 
     <section class="banner banner__img-blog">
-        <h1>percutraka <br> batucada</h1>
+        <p class="banner__text">Descubre historias detrás del escenario y consejos para los amantes de la música en
+            nuestro blog</p>
+        <h1 class="banner__title">blog y noticias</h1>
     </section>
     <main>
 
-        <section class="mb-3">
-            <h2>ARTÍCULOS RECIENTES</h2>
-            <div class="  container">
-                <div class="row g-3">
-                    <div class="col-12  col-md-6  col-lg-4">
-                        <div class="card">
-                            <img src="https://www.percuforum.com/blog/wp-content/uploads/2023/05/caixa.jpg"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text"><small class="text-body-secondary">Articulo</small></p>
-                                <h5 class="card-title">Caixa para batucada: ¿qué es?</h5>
-                                <p class="card-text">La caixa para batucada o caja de percusión es uno de los
-                                    instrumentos
-                                    más
-                                    utilizados en este tipo de expresión musical por lo que seguro que eres capaz de
-                                    identificar
-                                    su sonido tan característico. Se trata de[...]</p>
-                                <p class="card-text"><small class="text-body-secondary">mayo 18, 2023</small></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12  col-md-6  col-lg-4">
-                        <div class="card">
-                            <img src="https://www.percuforum.com/blog/wp-content/uploads/2022/03/26220773_1023660667785527_724083915380246793_o-600x444.jpg"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text"><small class="text-body-secondary"> Eventos</small></p>
-                                <h5 class="card-title">Farrufest!</h5>
-                                <p class="card-text">La Farruka cumple 10 años y lo va a celebrar organizando el
-                                    festival
-                                    Farrufest en Sarriguren (Navarra) el próximo 14 de mayo. Destaca el workshop de
-                                    percusión
-                                    con el director percusivo de Tambores e cores Junior Souza, hijo del mestre [...]
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary">febrero 16, 2023</small></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12  col-md-6  col-lg-4">
-                        <div class="card">
-                            <img src="https://www.percuforum.com/blog/wp-content/uploads/2021/05/timbau-800x600.jpg.webp"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text"><small class="text-body-secondary">General, información, Samba
-                                        reggae</small></p>
-                                <h5 class="card-title">Cómo elegir un Timbau. Análisis de características para saber qué
-                                    timba
-                                    comprar.</h5>
-                                <p class="card-text">Si vas a aprender a tocar el timbau o timbal brasileño (en muchos
-                                    sitios
-                                    conocido como timba), te recomendamos leer las siguientes líneas para que puedas
-                                    decidirte
-                                    por qué timba comprar [...]</p>
-                                <p class="card-text"><small class="text-body-secondary">enero 21, 2023</small></p>
-                            </div>
-                        </div>
+        <section class="blogContainer">
 
-                    </div>
+            <h2>ARTÍCULOS RECIENTES</h2>
+
+            <div class="blogCard">
+
+
+
+                <img src="https://www.percuforum.com/blog/wp-content/uploads/2023/05/caixa.jpg" alt="Foto de caixa"
+                    class="blogCard__img">
+
+
+
+                <div class="blogCard__body">
+                    <span class="blogCard__body__tag">Articulo</span>
+                    <h2 class="blogCard__body__title">Caixa para batucada: ¿qué es?</h2>
+                    <p class="blogCard__body__text">
+                        La caixa para batucada o caja de percusión es uno de los
+                        instrumentos
+                        más
+                        utilizados en este tipo de expresión musical por lo que seguro que eres capaz de
+                        identificar
+                        su sonido tan característico. Se trata de[...]
+                    </p>
+                    <span class="blogCard__body__date">
+                        mayo 18, 2023
+                    </span>
                 </div>
+
+            </div>
+            <div class="blogCard">
+
+
+
+                <img src="https://www.percuforum.com/blog/wp-content/uploads/2022/03/26220773_1023660667785527_724083915380246793_o-600x444.jpg"
+                    alt="imagen evento  farrufest  de  la farruka" class="blogCard__img">
+
+
+
+                <div class="blogCard__body">
+                    <span class="blogCard__body__tag">Eventos</span>
+                    <h2 class="blogCard__body__title">Farrufest!</h2>
+                    <p class="blogCard__body__text">
+                        La Farruka cumple 10 años y lo va a celebrar organizando el
+                        festival
+                        Farrufest en Sarriguren (Navarra) el próximo 14 de mayo. Destaca el workshop de
+                        percusión
+                        con el director percusivo de Tambores e cores Junior Souza, hijo del mestre [...]
+                    </p>
+                    <span class="blogCard__body__date">
+                        febrero 16, 2023
+                    </span>
+                </div>
+
+            </div>
+            <div class="blogCard">
+
+
+
+                <img src="https://www.percuforum.com/blog/wp-content/uploads/2021/05/timbau-800x600.jpg.webp"
+                    alt="persona tocando timbau" class="blogCard__img">
+
+
+
+                <div class="blogCard__body">
+                    <span class="blogCard__body__tag">General, información, Samba
+                        reggae</span>
+                    <h2 class="blogCard__body__title">Cómo elegir un Timbau. Análisis de características para saber
+                        qué
+                        timba
+                        comprar</h2>
+                    <p class="blogCard__body__text">
+                        Si vas a aprender a tocar el timbau o timbal brasileño (en muchos
+                        sitios
+                        conocido como timba), te recomendamos leer las siguientes líneas para que puedas
+                        decidirte
+                        por qué timba comprar [...]
+                    </p>
+                    <span class="blogCard__body__date">
+                        enero 21, 2023
+                    </span>
+                </div>
+
+            </div>
+            <div class="blogCard">
+
+
+
+                <img src="https://www.percuforum.com/blog/wp-content/uploads/2023/05/caixa.jpg" alt="Foto de caixa"
+                    class="blogCard__img">
+
+
+
+                <div class="blogCard__body">
+                    <span class="blogCard__body__tag">Articulo</span>
+                    <h2 class="blogCard__body__title">Caixa para batucada: ¿qué es?</h2>
+                    <p class="blogCard__body__text">
+                        La caixa para batucada o caja de percusión es uno de los
+                        instrumentos
+                        más
+                        utilizados en este tipo de expresión musical por lo que seguro que eres capaz de
+                        identificar
+                        su sonido tan característico. Se trata de[...]
+                    </p>
+                    <span class="blogCard__body__date">
+                        mayo 18, 2023
+                    </span>
+                </div>
+
+            </div>
+            <div class="blogCard">
+
+
+
+                <img src="https://www.percuforum.com/blog/wp-content/uploads/2022/03/26220773_1023660667785527_724083915380246793_o-600x444.jpg"
+                    alt="imagen evento  farrufest  de  la farruka" class="blogCard__img">
+
+
+
+                <div class="blogCard__body">
+                    <span class="blogCard__body__tag">Eventos</span>
+                    <h2 class="blogCard__body__title">Farrufest!</h2>
+                    <p class="blogCard__body__text">
+                        La Farruka cumple 10 años y lo va a celebrar organizando el
+                        festival
+                        Farrufest en Sarriguren (Navarra) el próximo 14 de mayo. Destaca el workshop de
+                        percusión
+                        con el director percusivo de Tambores e cores Junior Souza, hijo del mestre [...]
+                    </p>
+                    <span class="blogCard__body__date">
+                        febrero 16, 2023
+                    </span>
+                </div>
+
+            </div>
+            <div class="blogCard">
+
+
+
+                <img src="https://www.percuforum.com/blog/wp-content/uploads/2021/05/timbau-800x600.jpg.webp"
+                    alt="persona tocando timbau" class="blogCard__img">
+
+
+
+                <div class="blogCard__body">
+                    <span class="blogCard__body__tag">General, información, Samba
+                        reggae</span>
+                    <h2 class="blogCard__body__title">Cómo elegir un Timbau. Análisis de características para saber
+                        qué
+                        timba
+                        comprar</h2>
+                    <p class="blogCard__body__text">
+                        Si vas a aprender a tocar el timbau o timbal brasileño (en muchos
+                        sitios
+                        conocido como timba), te recomendamos leer las siguientes líneas para que puedas
+                        decidirte
+                        por qué timba comprar [...]
+                    </p>
+                    <span class="blogCard__body__date">
+                        enero 21, 2023
+                    </span>
+                </div>
+
             </div>
 
-
-
-
         </section>
-        <nav>
-            <ul class="pagination justify-content-end">
-                <li class="page-item disabled">
+
+        <nav class="paginator">
+            <ul class="">
+                <li class="page-item">
                     <a class="page-link">Previous</a>
                 </li>
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -125,6 +235,7 @@
                 </li>
             </ul>
         </nav>
+
     </main>
     <hr>
     <footer class="footer">
@@ -136,18 +247,20 @@
             <h3>Todos los derechos reservados</h3>
         </div>
 
-        <div class="redes sociales">
-            <a href="#" class="footer__icon"><img src="../img/icon_facebook.png" alt=""></a>
-            <a href="#" class="footer__icon"><img src="../img/icon_twitter.png" alt=""></a>
-            <a href="#" class="footer__icon"><img src="../img/icon_telegram.png" alt=""></a>
-            <a href="#" class="footer__icon"><img src="../img/icon_whatsapp.png" alt=""></a>
+        <div>
+            <a href="#" class="footer__icon"><img src="../img/icon_facebook.png"
+                    alt="ícono de facebook con  link al  perfil de percutraka"></a>
+            <a href="#" class="footer__icon"><img src="../img/icon_twitter.png"
+                    alt="ícono de twitter con  link al  perfil de percutraka"></a>
+            <a href="#" class="footer__icon"><img src="../img/icon_telegram.png"
+                    alt="ícono de telegram con  link al  perfil de percutraka"></a>
+            <a href="#" class="footer__icon"><img src="../img/icon_whatsapp.png"
+                    alt="ícono de whatsapp con  link al  perfil de percutraka"></a>
         </div>
         <span>Desarrollado por: Nahuel Medina</span>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

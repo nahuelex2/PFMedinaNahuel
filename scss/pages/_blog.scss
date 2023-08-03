@@ -1,0 +1,36 @@
+.blogContainer {
+
+    display: grid;
+    // justify-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+
+        width: 85%;
+    }
+
+
+    & h2 {
+
+        text-align: center;
+
+        @include tablet {
+            grid-column: span 2;
+        }
+
+        @include desktop {
+            grid-column: 1/5;
+
+        }
+
+
+    }
+}

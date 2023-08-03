@@ -48,7 +48,8 @@ body {
 @media (min-width: 1200px) {
   .article__text {
     text-align: justify;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    align-self: start;
   }
 }
 .article__img {
@@ -71,13 +72,11 @@ body {
   position: fixed;
   width: 100%;
   z-index: 999;
-  box-shadow: 1px 1px 4px 0 rgba(5, 228, 72, 0.1);
 }
 @media (min-width: 1200px) {
   .header {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-    padding: 10px 85px;
   }
 }
 .header__logo {
@@ -95,6 +94,9 @@ body {
     grid-column: 2/3;
   }
 }
+.header__logo__link {
+  text-decoration: none;
+}
 .header__logo__img {
   width: 4rem;
   border-radius: 50px 20px;
@@ -102,6 +104,7 @@ body {
 .header__logo__title {
   font-family: "Kablammo", cursive;
   font-size: 1.8rem;
+  color: white;
 }
 
 .nav {
@@ -144,7 +147,7 @@ body {
   }
 }
 .nav__link {
-  color: white;
+  color: rgba(226, 221, 221, 0.959);
   text-decoration: none;
   font-size: 1.2rem;
   font-size: 1rem;
@@ -225,21 +228,33 @@ body {
   height: 30rem;
   background-size: cover;
   background-position: center;
-  position: relative;
-  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
 }
 @media (min-width: 1200px) {
   .banner {
     height: 100vh;
+    margin-bottom: 0.5rem;
   }
 }
-.banner h1 {
+.banner__text {
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.397);
+  width: 12rem;
+  font-weight: 500;
+}
+@media (min-width: 1200px) {
+  .banner__text {
+    font-size: 2.2rem;
+    width: 28rem;
+  }
+}
+.banner__title {
+  align-self: flex-end;
   font-family: "Kablammo", cursive;
-  font-size: 2.2rem;
-  text-align: end;
-  position: absolute;
-  bottom: 20%;
-  right: 10%;
+  font-size: 1.8rem;
   background: radial-gradient(circle, rgb(255, 0, 0) 0%, rgb(241, 255, 0) 50%, rgb(51, 186, 36) 100%);
   /* Mask the color to the text, and remove the rest  */
   -webkit-background-clip: text;
@@ -248,8 +263,8 @@ body {
   -webkit-text-fill-color: transparent;
 }
 @media (min-width: 1200px) {
-  .banner h1 {
-    font-size: 6rem;
+  .banner__title {
+    font-size: 4rem;
   }
 }
 
@@ -258,15 +273,15 @@ body {
 }
 
 .banner__img-about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://www.fm899.com.ar/public/images/noticias/62387-brindaran-taller-gratuito-sobre-batucada-y-cantos-olodunicos.jpg");
+}
+
+.banner__img-blog {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://www.brasiltradicionalshow.com/wp-content/uploads/2016/05/Batucada-BTS-8.jpg");
 }
 
 .banner__img-galery {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.8ebiOyHEoyjLZ_2LkQEPgQHaE7%26pid%3DApi&f=1&ipt=0d0149d6a38bba5e48f9f902f5013738eb697636d4414f6ed4ca65bd2274681b&ipo=images");
-}
-
-.banner__img-blog {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("");
 }
 
 .banner__img-contact {
@@ -289,7 +304,7 @@ body {
   width: 2.5rem;
   margin: 0.2rem;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .footer__text {
     display: flex;
     justify-content: center;
@@ -330,6 +345,146 @@ body {
   padding-top: 1rem;
 }
 
+.gallery__item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.gallery__item .gallery__item__media {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.gallery__item .gallery__item__media img, .gallery__item .gallery__item__media iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.gallery__item:hover .gallery__item__media img {
+  transform: scale(1.5);
+}
+.gallery__item:hover .gallery__item__media iframe {
+  transform: scale(0.95);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-color: rgba(243, 6, 6, 0.26);
+  flex-wrap: nowrap;
+  padding: 1rem;
+  background: linear-gradient(90deg, rgba(93, 0, 0, 0.4485994227) 0%, rgba(154, 142, 6, 0.4485994227) 50%, rgba(16, 106, 6, 0.4822128681) 100%);
+}
+.form textarea {
+  height: 120px;
+  width: 100%;
+  resize: none;
+}
+.form__control {
+  padding: 0.8rem;
+  border-radius: 6px;
+  width: 100%;
+}
+.form__btn {
+  width: 80%;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(12, 102, 39);
+  cursor: pointer;
+  color: white;
+  background-color: rgba(172, 4, 35, 0.925);
+  font-size: 20px;
+}
+.form__btn:hover {
+  background-color: rgb(199, 20, 53);
+}
+@media (min-width: 1200px) {
+  .form {
+    border-radius: 1rem;
+  }
+}
+
+.card {
+  background-color: whitesmoke;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 0.3rem;
+}
+.card-title {
+  color: black;
+  font-size: 1.5rem;
+}
+.card-subtitle {
+  color: black;
+  font-size: 1rem;
+}
+.card-icons {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.blogCard {
+  background-color: beige;
+  width: 300px;
+  background-color: rgb(221, 221, 161);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.blogCard__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.blogCard__body {
+  color: black;
+  text-align: center;
+}
+.blogCard__body span {
+  color: rgb(88, 87, 87);
+}
+.blogCard__body__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.paginator {
+  margin: 1rem auto;
+  background-color: whitesmoke;
+  color: black;
+  display: flex;
+  width: 300px;
+  border-radius: 10px;
+  height: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .paginator {
+    margin-left: auto;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+.paginator ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .video {
   width: 100%;
   height: 40vh;
@@ -366,50 +521,6 @@ body {
   grid-auto-rows: 100px 300px;
   grid-gap: 0.4rem;
   grid-auto-flow: dense;
-}
-
-.gallery__item {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.gallery__item .gallery__item__media {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.gallery__item .gallery__item__media img, .gallery__item .gallery__item__media iframe {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-.gallery__item:hover .gallery__item__media img {
-  transform: scale(1.5);
-}
-.gallery__item:hover .gallery__item__media iframe {
-  transform: scale(0.95);
-}
-.gallery__item .gallery__item__text {
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 25px;
-  pointer-events: none;
-  z-index: 4;
-  transition: 0.3 ease-in-out;
-  -webkit-backdrop-filter: blur(5px) saturate(1.8);
-  backdrop-filter: blur(5px) saturate(1.8);
-}
-.gallery__item:hover .gallery__item__text {
-  animation: move-down 0.3s linear;
-  padding: 1em;
-  width: 100%;
 }
 
 .w-1 {
@@ -458,6 +569,103 @@ body {
 
 .h-6 {
   grid-row: span 6;
+}
+
+@media screen and (max-width: 500px) {
+  .gallery__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .w-1,
+  .w-2,
+  .w-3,
+  .w-4,
+  .w-5,
+  .w-6 {
+    grid-column: span 2;
+  }
+}
+@media screen and (max-width: 300px) {
+  .gallery__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .w-1,
+  .w-2,
+  .w-3,
+  .w-4,
+  .w-5,
+  .w-6 {
+    grid-column: span 1;
+  }
+}
+.blogContainer {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .blogContainer {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .blogContainer {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    width: 85%;
+  }
+}
+.blogContainer h2 {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .blogContainer h2 {
+    grid-column: span 2;
+  }
+}
+@media (min-width: 1200px) {
+  .blogContainer h2 {
+    grid-column: 1/5;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gridContainer {
+    width: 85%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media (min-width: 1200px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: rgba(109, 110, 6, 0.349);
+}
+@media (min-width: 1200px) {
+  .aside {
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
